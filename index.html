@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Qur'an Ayah Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Welcome Screen -->
+        <section id="welcome-screen" class="screen active">
+
+            <div class="quran-icon">☪</div>
+
+            <h1>Qur'an Ayah Quiz</h1>
+
+            <p class="subtitle">
+                Test your knowledge of Qur'an Surahs
+            </p>
+
+            <p class="range">
+                Surah Al-Jāthiyah 45 → An-Nās 114
+            </p>
+
+            <button id="start-btn" class="primary-btn">
+                Start Quiz
+            </button>
+
+        </section>
+
+
+        <!-- Settings Screen -->
+        <section id="settings-screen" class="screen">
+
+            <h2>Quiz Settings</h2>
+
+            <p>Select number of questions</p>
+
+            <div class="question-options">
+
+                <button class="question-count" data-count="10">10</button>
+                <button class="question-count" data-count="20">20</button>
+                <button class="question-count" data-count="30">30</button>
+                <button class="question-count" data-count="40">40</button>
+                <button class="question-count" data-count="50">50</button>
+                <button class="question-count" data-count="60">60</button>
+                <button class="question-count" data-count="70">70</button>
+
+            </div>
+
+            <p>Select difficulty</p>
+
+            <div class="difficulty-options">
+
+                <button class="difficulty" data-level="easy">
+                    Easy
+                </button>
+
+                <button class="difficulty" data-level="medium">
+                    Medium
+                </button>
+
+                <button class="difficulty" data-level="hard">
+                    Hard
+                </button>
+
+            </div>
+
+            <button id="begin-btn" class="primary-btn">
+                Begin Quiz
+            </button>
+
+        </section>
+
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen">
+
+            <div class="quiz-header">
+
+                <span id="question-number">
+                    Question 1 / 10
+                </span>
+
+                <span id="score">
+                    Score: 0
+                </span>
+
+            </div>
+
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div class="timer">
+                Time: <span id="timer">15</span>
+            </div>
+
+            <div class="surah-card">
+
+                <p id="surah-number">
+                    Surah 45
+                </p>
+
+                <h2 id="surah-arabic">
+                    الجاثية
+                </h2>
+
+                <h3 id="surah-name">
+                    Al-Jāthiyah
+                </h3>
+
+            </div>
+
+            <h2 class="question-text">
+                How many Ayahs are in this Surah?
+            </h2>
+
+            <div id="answers" class="answers">
+
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+
+            <button id="next-btn" class="primary-btn next-btn">
+                Next Question
+            </button>
+
+        </section>
+
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="screen">
+
+            <div class="result-icon">🏆</div>
+
+            <h1>Quiz Completed!</h1>
+
+            <div class="result-card">
+
+                <p>
+                    Total Questions:
+                    <strong id="total-result">10</strong>
+                </p>
+
+                <p>
+                    Correct Answers:
+                    <strong id="correct-result">0</strong>
+                </p>
+
+                <p>
+                    Incorrect Answers:
+                    <strong id="incorrect-result">0</strong>
+                </p>
+
+                <p>
+                    Score:
+                    <strong id="final-score">0 / 10</strong>
+                </p>
+
+                <p>
+                    Percentage:
+                    <strong id="percentage">0%</strong>
+                </p>
+
+            </div>
+
+            <p id="result-message" class="result-message">
+                Keep learning the Qur'an and increasing your knowledge.
+            </p>
+
+            <button id="play-again-btn" class="primary-btn">
+                Play Again
+            </button>
+
+            <button id="change-settings-btn" class="secondary-btn">
+                Change Settings
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
